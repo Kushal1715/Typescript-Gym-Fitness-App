@@ -19,14 +19,14 @@ const Home = ({ setSelectedPage }: Props) => {
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
-      <motion.div
+      <div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* MAIN HEADER */}
         <div className="z-10 mt-32 md:basis-3/5">
           {/* HEADINGS */}
-          <motion.div
+          <div
             className="md:-mt-20"
             initial="hidden"
             whileInView="visible"
@@ -48,10 +48,10 @@ const Home = ({ setSelectedPage }: Props) => {
               Studios to get the Body Shapes That you Dream of.. Get Your Dream
               Body Now.
             </p>
-          </motion.div>
+          </div>
 
           {/* ACTIONS */}
-          <motion.div
+          <div
             className="mt-8 flex items-center gap-8"
             initial="hidden"
             whileInView="visible"
@@ -72,7 +72,7 @@ const Home = ({ setSelectedPage }: Props) => {
             >
               <p>Learn More</p>
             </AnchorLink>
-          </motion.div>
+          </div>
         </div>
 
         {/* IMAGE */}
@@ -82,7 +82,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
-      </motion.div>
+      </div>
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
